@@ -30,6 +30,9 @@ export interface AppThemeColors {
   appbarBackground: string;
   inputBackground: string;
   inputText: string;
+  info: string;
+  warning: string;
+  error: string;
   /* Custom token extensions if an app needs custom color tokens */
   custom: { [key: string]: string; }
 }
