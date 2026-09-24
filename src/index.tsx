@@ -23,6 +23,7 @@ export interface AppThemeColors {
   text: string;
   border: string;
   overlay: string;
+  shadow: string;
   surface: string;
   surfaceSecondary: string;
   placeholder: string;
