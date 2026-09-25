@@ -54,6 +54,49 @@ export function createAppTheme(config: {
   };
 }
 
+export const defaultThemeConfig: AppThemeConfig = createAppTheme({
+  lightColors: {
+    variant: 'light',
+    primary: '#01579B',
+    accent: '#890817',
+    background: '#ffffff',
+    appbarBackground: '#f4f4f5',
+    placeholder: '#999999',
+    text: '#000000',
+    border: '#383838ff',
+    overlay: 'rgba(0, 0, 0, 0.4)',
+    shadow: '#000000',
+    surface: '#f4f4f5',
+    surfaceSecondary: '#e4e4e7',
+    inputBackground: '#ffffff',
+    inputText: '#000000',
+    info: '#01579B',
+    warning: '#f59e0b',
+    error: '#ef4444',
+    custom: {}
+  },
+  darkColors: {
+    variant: 'dark',
+    primary: '#38bdf8',
+    accent: '#ff4d6d',
+    background: '#121212',
+    appbarBackground: '#27272a',
+    placeholder: '#999999',
+    text: '#ffffff',
+    border: '#afafafff',
+    overlay: 'rgba(0, 0, 0, 0.6)',
+    shadow: '#000000',
+    surface: '#27272a',
+    surfaceSecondary: '#3f3f46',
+    inputBackground: '#212121ff',
+    inputText: '#ffffff',
+    info: '#38bdf8',
+    warning: '#fbbf24',
+    error: '#f87171',
+    custom: {}
+  }
+});
+
 const ThemeContext = createContext<AppThemeColors | null>(null);
 
 const getResolvedColors = (theme: AppTheme, systemScheme: string | null | undefined, config: AppThemeConfig) => {
