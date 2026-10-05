@@ -33,6 +33,7 @@ export interface AppThemeColors {
   info: string;
   warning: string;
   error: string;
+  danger: string;
   /* Custom token extensions if an app needs custom color tokens */
   custom: { [key: string]: string; }
 }
@@ -73,6 +74,7 @@ export const defaultThemeConfig: AppThemeConfig = createAppTheme({
     info: '#01579B',
     warning: '#f59e0b',
     error: '#ef4444',
+    danger: '#ef4444',
     custom: {}
   },
   darkColors: {
@@ -93,6 +95,7 @@ export const defaultThemeConfig: AppThemeConfig = createAppTheme({
     info: '#38bdf8',
     warning: '#fbbf24',
     error: '#f87171',
+    danger: '#f87171',
     custom: {}
   }
 });
